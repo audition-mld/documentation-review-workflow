@@ -17,3 +17,12 @@ A small demo repository for documenting collaboration workflows.
 - Keep changes small and focused.
 - Describe the actual improvement in the Pull Request description.
 - Use `git log --pretty=full` to verify authorship before pushing.
+
+## Collaboration Guidance
+
+When working together, agree on authorship before pushing:
+
+- The person writing the change commits as the primary author.
+- Add any pair partner with a `Co-authored-by` trailer at the end of the commit message, preceded by a blank line.
+- Verify with `git show -s --format=fuller HEAD` that the author email uses the GitHub `users.noreply.github.com` address so GitHub links both profiles.
+- Open a Pull Request and merge with a merge commit so the original co-authored commit stays intact on `main`.
