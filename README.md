@@ -1,28 +1,37 @@
-# Pair Attribution Demo
+# Documentation Review Workflow
 
-A small demo repository for documenting collaboration workflows.
+A lightweight process for drafting, reviewing, approving, and publishing clear documentation.
 
-## Getting Started
+## Workflow
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/audition-mld/pair-attribution-demo.git
-   ```
-2. Make changes on a focused branch.
-3. Open a Pull Request into `main`.
-4. Merge with a merge commit so individual commits keep their original authorship.
+1. Create a focused branch for the document update.
+2. Explain the purpose, audience, and expected outcome in the pull request.
+3. Ask a reviewer to evaluate the content with the checklist below.
+4. Resolve feedback and record any decisions that future maintainers may need.
+5. Obtain approval before merging and publishing the update.
+
+## Reviewer Checklist
+
+- The document has a clear purpose and intended audience.
+- Instructions are accurate, complete, and easy to follow.
+- Examples match the current product or process.
+- Links, commands, and references have been verified.
+- Terminology and formatting are consistent.
+- Sensitive or internal-only information is not exposed.
+
+## Approval Criteria
+
+A document is ready to merge when:
+
+- Required feedback has been addressed.
+- Open questions are resolved or tracked separately.
+- Automated checks pass, when applicable.
+- A reviewer confirms that the content is ready to publish.
+
+## Publishing
+
+After merging, confirm that the published document renders correctly and that its links work. If the documentation affects an operational process, notify the people responsible for following it.
 
 ## Contributing
 
-- Keep changes small and focused.
-- Describe the actual improvement in the Pull Request description.
-- Use `git log --pretty=full` to verify authorship before pushing.
-
-## Collaboration Guidance
-
-When working together, agree on authorship before pushing:
-
-- The person writing the change commits as the primary author.
-- Add any pair partner with a `Co-authored-by` trailer at the end of the commit message, preceded by a blank line.
-- Verify with `git show -s --format=fuller HEAD` that the author email uses the GitHub `users.noreply.github.com` address so GitHub links both profiles.
-- Open a Pull Request and merge with a merge commit so the original co-authored commit stays intact on `main`.
+Keep each change small and focused. Use the pull request description to explain what changed, why it changed, and how the update was verified.
